@@ -14,8 +14,8 @@ var router = _express["default"].Router();
 
 
 router.get("/", function (req, res, next) {
-  res.render("index", {
-    title: "Express"
+  res.json({
+    message: "Welcome to bezkoder application."
   });
 });
 var _default = router;

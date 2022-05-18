@@ -14,7 +14,7 @@ var router = _express["default"].Router();
 
 
 router.get("/", function (req, res, next) {
-  res.send("respond with a resource");
+  res.send("USER BOARD");
 });
 var _default = router;
 exports["default"] = _default;
