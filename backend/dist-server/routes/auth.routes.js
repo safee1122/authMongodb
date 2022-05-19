@@ -25,5 +25,13 @@ router.post("/signin", _auth.signin, function (req, res, next) {
   res.header("Access-Control-Allow-Headers", "x-access-token, Origin, Content-Type, Accept");
   next();
 });
+router.post("/tokenreCheck", _auth.tokenreCheck, function (req, res, next) {
+  res.header("Access-Control-Allow-Headers", "x-access-token, Origin, Content-Type, Accept");
+  next();
+});
+router.post("/tokenremove", _auth.tokenremove, function (req, res, next) {
+  res.header("Access-Control-Allow-Headers", "x-access-token, Origin, Content-Type, Accept");
+  next();
+});
 var _default = router;
 exports["default"] = _default;

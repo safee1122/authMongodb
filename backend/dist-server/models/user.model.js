@@ -12,7 +12,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var User = _mongoose["default"].model("User", new _mongoose["default"].Schema({
   username: String,
   email: String,
-  password: String
+  password: String,
+  token: String
 }));
 
 var _default = User;

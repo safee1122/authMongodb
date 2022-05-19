@@ -9,6 +9,7 @@ const checkDuplicateUsernameOrEmail = (req, res, next) => {
       return;
     }
     if (user) {
+      console.log(user);
       res.status(400).send({ message: "Failed! Username is already in use!" });
       return;
     }
